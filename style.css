@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  width: 250px;
+  height: 420px;
+  padding: 40px;
+  color: hsl(0, 0%, 95%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  width: 250px;
+  height: 420px;
+  padding: 40px;
+  color: hsl(0, 0%, 95%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  width: 250px;
+  height: 420px;
+  padding: 40px;
+  color: hsl(0, 0%, 95%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.p {
+  font-family: "Big Shoulders Display";
+  padding: 25px 0px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  padding-bottom: 70px;
+}
+
+.sedb {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.suvb {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.luxb {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.sedb:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.suvb:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.luxb:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 700px) {
+  body {
+    max-height: 100vh;
+    /* max-width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main {
+    display: block;
+
+    /* flex-wrap: wrap; */
+  }
+
+  .sedan {
+    min-height: auto;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* box-sizing: border-box; */
+    /* width: auto; */
+  }
+
+  .suv {
+    min-height: auto;
+    height: auto;
+  }
+
+  .luxury {
+    min-height: auto;
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .paragraph {
+    padding-bottom: 30px;
+  }
+}
